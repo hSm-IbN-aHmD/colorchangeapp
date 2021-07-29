@@ -16,12 +16,9 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   List milestoneList = [];
 
-  bool value = false;
-
   void _incrementCounter() {
     setState(() {
       _counter++;
-      value = !value;
       BoolData.boolValue = !BoolData.boolValue;
       print(BoolData.boolValue);
     });
